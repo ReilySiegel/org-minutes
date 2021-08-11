@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Motion to Postpone Indefinitely
+# key: mpi
+# --
+
+*** PENDING Motion to Postpone Indefinitely
+- Moved by $1
+- Seconded$0

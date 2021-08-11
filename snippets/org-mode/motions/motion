@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Motion
+# key: m
+# --
+
+** PENDING Motion to $1
+- Moved by $2
+- Seconded$0

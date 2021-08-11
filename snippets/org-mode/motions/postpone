@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Motion to Postpone
+# key: mp
+# --
+
+*** PENDING Motion to Postpone to $1
+- Moved by $2
+- Seconded
+$0
