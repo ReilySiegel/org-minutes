@@ -36,10 +36,10 @@
    (org-minutes-agenda--purpose organization)
    (org-minutes-agenda--attendance organization)
    (org-minutes-agenda--reports organization)
-   "* Unfinished Business\n"
-   "* New Business\n"
-   "* Serious Discussion\n"
-   "* Announcements\n"))
+   (string-join (seq-map (lambda (item)
+                           (concat "* " item))
+                         (org-minutes-organization-agenda organization))
+                "\n")))
 
 ;;;###autoload
 (defun org-minutes-agenda-insert ()

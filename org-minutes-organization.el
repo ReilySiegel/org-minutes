@@ -11,7 +11,10 @@
   name
   (key "m")
   (members nil)
-  (reports nil))
+  (reports nil)
+  (agenda '("Unfinished Business"
+            "New Business"
+            "Action Items")))
 
 (defvar org-minutes-organizations nil
   "List of `org-minutes-organization's to consider for use.")
