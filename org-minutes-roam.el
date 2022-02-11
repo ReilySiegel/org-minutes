@@ -32,9 +32,14 @@
 (defun org-minutes-roam-init ()
   (with-eval-after-load 'org-roam
     (setq org-roam-capture-templates
-          (append org-roam-capture-templates
-                  (seq-map #'org-minutes--org->template
-                           org-minutes-organizations)))))
+          (cl-remove-duplicates
+           (append org-roam-capture-templates
+                   (seq-map #'org-minutes--org->template
+                            org-minutes-organizations))
+           :test
+           (lambda (a b)
+             (string= (car a)
+                      (car b)))))))
 
 (provide 'org-minutes-roam)
 ;;; org-minutes-roam.el ends here
